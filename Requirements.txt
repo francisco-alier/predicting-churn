@@ -1,0 +1,14 @@
+numpy==1.18.2
+pandas==1.0.3
+seaborn==0.10.0
+matplotlib==3.2.1
+feature_engine==0.6.1
+hyperopt==0.2.4
+xgboost==1.0.2
+pandas-profiling==2.8.0
+inquirer == 2.7.0
+dalex == 0.2.2
+shap == 0.36.0
+altair == 4.1.0
+vega_datasets == 0.8.0
+h2o == 3.22.0.3
