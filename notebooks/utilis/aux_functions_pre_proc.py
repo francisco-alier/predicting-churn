@@ -133,12 +133,9 @@ def tgt_dist(df, y_var, target):
     # check if tarhet is from classification problem
     if len(df[target].unique()) <= 2:
         
-        target_0 = df.loc[df[target] == 0]
-        target_1 = df.loc[df[target] == 1]
 
         sns.set(style = 'white')
-        plot_0 = sns.distplot(target_0[[y_var]], hist=False, kde = True, label = '0')
-        plot_1 = sns.distplot(target_1[[y_var]], hist=False, kde = True, label = '1')
+        plot_0 = sns.displot(x = y_var, data = df, hue = target, kind='kde')
 
         plt.xlabel(y_var)
 
